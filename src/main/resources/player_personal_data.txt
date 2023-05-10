@@ -1,0 +1,2508 @@
+account_id	numeric
+Player account ID
+
+clan_id	numeric
+Clan ID
+
+client_language	string
+Language selected in the game client
+Warning. The field will be disabled.
+
+created_at	timestamp
+Date when player's account was created
+
+global_rating	numeric
+Personal rating
+
+last_battle_time	timestamp
+Last battle time
+
+logout_at	timestamp
+End time of last game session
+
+nickname	string
+Player name
+
+updated_at	timestamp
+Date when player details were updated
+
+private
+Player's private data
+
+private.ban_info	string
+Account ban details
+
+private.ban_time	timestamp
+End time of account ban
+
+private.battle_life_time	numeric
+Overall battle life time in seconds
+
+private.bonds	numeric
+Bonds
+
+private.credits	numeric
+Credits
+
+private.free_xp	numeric
+Free Experience
+
+private.garage	list of integers
+Vehicles in the Garage.
+
+private.gold	numeric
+Gold
+
+private.is_bound_to_phone	boolean
+Indicates if mobile phone number was added to the account
+
+private.is_premium	boolean
+Indicates if the account is Premium Account
+
+private.personal_missions	associative array
+Personal Missions Progress. The key is a task id, the value is a status.
+Possible statuses:
+NONE - a mission is unavailable
+UNLOCKED - a mission is available
+NEED_GET_MAIN_REWARD - the main reward has not been received
+MAIN_REWARD_GOTTEN - the main reward has been received
+NEED_GET_ADD_REWARD - additional reward has not been received
+NEED_GET_ALL_REWARDS - no rewards have been received
+ALL_REWARDS_GOTTEN - all rewards have been received .
+An extra field.
+
+private.premium_expires_at	timestamp
+Premium Account expiration time
+
+private.boosters
+Personal Reserves.
+
+private.boosters.count	numeric
+Amount of Personal Reserves
+
+private.boosters.expiration_time	timestamp
+Expiration time
+
+private.boosters.state	string
+Status of Personal Reserves. Valid values:
+ACTIVE - Active
+INACTIVE - Inactive
+USED - Used
+
+private.grouped_contacts
+Contact groups.
+An extra field.
+
+private.grouped_contacts.blocked	list of integers
+The contact was added to the blacklist. Note that the blocked contact still belongs to contact groups or to the ungrouped list of contacts.
+
+private.grouped_contacts.groups	associative array
+Groups
+
+private.grouped_contacts.ignored	list of integers
+Ignored
+
+private.grouped_contacts.muted	list of integers
+Muted
+
+private.grouped_contacts.ungrouped	list of integers
+Not grouped
+
+private.rented
+Vehicle Rental.
+
+private.rented.compensation_credits	numeric
+Rental compensation in credits
+
+private.rented.compensation_gold	numeric
+Rental compensation in gold
+
+private.rented.expiration_time	timestamp
+Vehicle Rental expiration time
+
+private.rented.tank_id	numeric
+Rented vehicle ID
+
+private.restrictions
+Account restrictions
+
+private.restrictions.chat_ban_time	timestamp
+End time of chat ban
+
+statistics.frags	associative array
+Number and models of vehicles destroyed by a player. Player's private data.
+
+statistics.trees_cut	numeric
+Trees knocked down
+
+statistics.all
+Total statistics in Random and clan battles without the Global Map 2.0 statistics
+
+statistics.all.avg_damage_assisted	float
+Average damage caused with your assistance. Value is calculated starting from version 8.8.
+
+statistics.all.avg_damage_assisted_radio	float
+Average damage upon your spotting. Value is calculated starting from version 8.8.
+
+statistics.all.avg_damage_assisted_track	float
+Average damage upon your shooting the track. Value is calculated starting from version 8.8.
+
+statistics.all.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.all.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.all.battles	numeric
+Battles fought
+
+statistics.all.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.all.capture_points	numeric
+Base capture points
+
+statistics.all.damage_dealt	numeric
+Damage caused
+
+statistics.all.damage_received	numeric
+Damage received
+
+statistics.all.direct_hits_received	numeric
+Direct hits received
+
+statistics.all.draws	numeric
+Draws
+
+statistics.all.dropped_capture_points	numeric
+Base defense points
+
+statistics.all.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.all.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.all.frags	numeric
+Vehicles destroyed
+
+statistics.all.hits	numeric
+Hits
+
+statistics.all.hits_percents	numeric
+Hit ratio
+
+statistics.all.losses	numeric
+Defeats
+
+statistics.all.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.all.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.all.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.all.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.all.max_xp	numeric
+Maximum experience per battle
+
+statistics.all.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.all.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.all.piercings	numeric
+Penetrations
+
+statistics.all.piercings_received	numeric
+Penetrations received
+
+statistics.all.shots	numeric
+Shots fired
+
+statistics.all.spotted	numeric
+Enemies spotted
+
+statistics.all.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.all.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.all.survived_battles	numeric
+Battles survived
+
+statistics.all.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.all.wins	numeric
+Victories
+
+statistics.all.xp	numeric
+Total experience
+
+statistics.clan
+Clan battles statistics
+
+statistics.clan.avg_damage_assisted	float
+Average damage caused with your assistance. Value is calculated starting from version 8.9.
+
+statistics.clan.avg_damage_assisted_radio	float
+Average damage upon your spotting. Value is calculated starting from version 8.9.
+
+statistics.clan.avg_damage_assisted_track	float
+Average damage upon your shooting the track. Value is calculated starting from version 8.9.
+
+statistics.clan.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.clan.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.clan.battles	numeric
+Battles fought
+
+statistics.clan.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.clan.capture_points	numeric
+Base capture points
+
+statistics.clan.damage_dealt	numeric
+Damage caused
+
+statistics.clan.damage_received	numeric
+Damage received
+
+statistics.clan.direct_hits_received	numeric
+Direct hits received
+
+statistics.clan.draws	numeric
+Draws
+
+statistics.clan.dropped_capture_points	numeric
+Base defense points
+
+statistics.clan.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.clan.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.clan.frags	numeric
+Vehicles destroyed
+
+statistics.clan.hits	numeric
+Hits
+
+statistics.clan.hits_percents	numeric
+Hit ratio
+
+statistics.clan.losses	numeric
+Defeats
+
+statistics.clan.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.clan.piercings	numeric
+Penetrations
+
+statistics.clan.piercings_received	numeric
+Penetrations received
+
+statistics.clan.shots	numeric
+Shots fired
+
+statistics.clan.spotted	numeric
+Enemies spotted
+
+statistics.clan.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.clan.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.clan.survived_battles	numeric
+Battles survived
+
+statistics.clan.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.clan.wins	numeric
+Victories
+
+statistics.clan.xp	numeric
+Total experience
+
+statistics.company
+Tank Company battles statistics
+
+statistics.company.avg_damage_assisted	float
+Average damage caused with your assistance. Value is calculated starting from version 8.9.
+
+statistics.company.avg_damage_assisted_radio	float
+Average damage upon your spotting. Value is calculated starting from version 8.9.
+
+statistics.company.avg_damage_assisted_track	float
+Average damage upon your shooting the track. Value is calculated starting from version 8.9.
+
+statistics.company.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.company.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.company.battles	numeric
+Battles fought
+
+statistics.company.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.company.capture_points	numeric
+Base capture points
+
+statistics.company.damage_dealt	numeric
+Damage caused
+
+statistics.company.damage_received	numeric
+Damage received
+
+statistics.company.direct_hits_received	numeric
+Direct hits received
+
+statistics.company.draws	numeric
+Draws
+
+statistics.company.dropped_capture_points	numeric
+Base defense points
+
+statistics.company.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.company.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.company.frags	numeric
+Vehicles destroyed
+
+statistics.company.hits	numeric
+Hits
+
+statistics.company.hits_percents	numeric
+Hit ratio
+
+statistics.company.losses	numeric
+Defeats
+
+statistics.company.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.company.piercings	numeric
+Penetrations
+
+statistics.company.piercings_received	numeric
+Penetrations received
+
+statistics.company.shots	numeric
+Shots fired
+
+statistics.company.spotted	numeric
+Enemies spotted
+
+statistics.company.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.company.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.company.survived_battles	numeric
+Battles survived
+
+statistics.company.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.company.wins	numeric
+Victories
+
+statistics.company.xp	numeric
+Total experience
+
+statistics.epic
+Statistics in Grand Battles.
+
+An extra field.
+
+statistics.epic.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.epic.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.epic.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.epic.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.epic.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.epic.battles	numeric
+Battles fought
+
+statistics.epic.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.epic.capture_points	numeric
+Base capture points
+
+statistics.epic.damage_dealt	numeric
+Damage caused
+
+statistics.epic.damage_received	numeric
+Damage received
+
+statistics.epic.direct_hits_received	numeric
+Direct hits received
+
+statistics.epic.draws	numeric
+Draws
+
+statistics.epic.dropped_capture_points	numeric
+Base defense points
+
+statistics.epic.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.epic.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.epic.frags	numeric
+Vehicles destroyed
+
+statistics.epic.hits	numeric
+Hits
+
+statistics.epic.hits_percents	numeric
+Hit ratio
+
+statistics.epic.losses	numeric
+Defeats
+
+statistics.epic.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.epic.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.epic.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.epic.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.epic.max_xp	numeric
+Maximum experience per battle
+
+statistics.epic.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.epic.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.epic.piercings	numeric
+Penetrations
+
+statistics.epic.piercings_received	numeric
+Penetrations received
+
+statistics.epic.shots	numeric
+Shots fired
+
+statistics.epic.spotted	numeric
+Enemies spotted
+
+statistics.epic.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.epic.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.epic.survived_battles	numeric
+Battles survived
+
+statistics.epic.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.epic.wins	numeric
+Victories
+
+statistics.epic.xp	numeric
+Total experience
+
+statistics.fallout
+Fallout statistics.
+
+An extra field.
+
+statistics.fallout.avatar_damage_dealt	numeric
+Damage caused by Combat Reserves
+
+statistics.fallout.avatar_frags	numeric
+Destroyed by Combat Reserves
+
+statistics.fallout.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.fallout.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.fallout.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.fallout.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.fallout.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.fallout.battles	numeric
+Battles fought
+
+statistics.fallout.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.fallout.capture_points	numeric
+Base capture points
+
+statistics.fallout.damage_dealt	numeric
+Damage caused
+
+statistics.fallout.damage_received	numeric
+Damage received
+
+statistics.fallout.death_count	numeric
+Deaths
+
+statistics.fallout.direct_hits_received	numeric
+Direct hits received
+
+statistics.fallout.draws	numeric
+Draws
+
+statistics.fallout.dropped_capture_points	numeric
+Base defense points
+
+statistics.fallout.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.fallout.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.fallout.flag_capture	numeric
+Flags captured in platoon
+
+statistics.fallout.flag_capture_solo	numeric
+Flags captured as solo player
+
+statistics.fallout.frags	numeric
+Vehicles destroyed
+
+statistics.fallout.hits	numeric
+Hits
+
+statistics.fallout.hits_percents	numeric
+Hit ratio
+
+statistics.fallout.losses	numeric
+Defeats
+
+statistics.fallout.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.fallout.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.fallout.max_damage_with_avatar	numeric
+Maximum damage caused in one battle including damage from avatar
+
+statistics.fallout.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.fallout.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.fallout.max_frags_with_avatar	numeric
+Maximum destroyed in one battle including vehicles destroyed by avatar
+
+statistics.fallout.max_win_points	numeric
+Maximum Victory Points earned in Fallout
+
+statistics.fallout.max_xp	numeric
+Maximum experience per battle
+
+statistics.fallout.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.fallout.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.fallout.piercings	numeric
+Penetrations
+
+statistics.fallout.piercings_received	numeric
+Penetrations received
+
+statistics.fallout.resource_absorbed	numeric
+Resources captured at resource points
+
+statistics.fallout.shots	numeric
+Shots fired
+
+statistics.fallout.spotted	numeric
+Enemies spotted
+
+statistics.fallout.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.fallout.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.fallout.survived_battles	numeric
+Battles survived
+
+statistics.fallout.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.fallout.win_points	numeric
+Victory Points
+
+statistics.fallout.wins	numeric
+Victories
+
+statistics.fallout.xp	numeric
+Total experience
+
+statistics.globalmap_absolute
+Battle statistics on the Global Map in Absolute division.
+
+An extra field.
+
+statistics.globalmap_absolute.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.globalmap_absolute.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.globalmap_absolute.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.globalmap_absolute.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.globalmap_absolute.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.globalmap_absolute.battles	numeric
+Battles fought
+
+statistics.globalmap_absolute.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.globalmap_absolute.capture_points	numeric
+Base capture points
+
+statistics.globalmap_absolute.damage_dealt	numeric
+Damage caused
+
+statistics.globalmap_absolute.damage_received	numeric
+Damage received
+
+statistics.globalmap_absolute.direct_hits_received	numeric
+Direct hits received
+
+statistics.globalmap_absolute.draws	numeric
+Draws
+
+statistics.globalmap_absolute.dropped_capture_points	numeric
+Base defense points
+
+statistics.globalmap_absolute.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.globalmap_absolute.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.globalmap_absolute.frags	numeric
+Vehicles destroyed
+
+statistics.globalmap_absolute.hits	numeric
+Hits
+
+statistics.globalmap_absolute.hits_percents	numeric
+Hit ratio
+
+statistics.globalmap_absolute.losses	numeric
+Defeats
+
+statistics.globalmap_absolute.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.globalmap_absolute.piercings	numeric
+Penetrations
+
+statistics.globalmap_absolute.piercings_received	numeric
+Penetrations received
+
+statistics.globalmap_absolute.shots	numeric
+Shots fired
+
+statistics.globalmap_absolute.spotted	numeric
+Enemies spotted
+
+statistics.globalmap_absolute.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.globalmap_absolute.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.globalmap_absolute.survived_battles	numeric
+Battles survived
+
+statistics.globalmap_absolute.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.globalmap_absolute.wins	numeric
+Victories
+
+statistics.globalmap_absolute.xp	numeric
+Total experience
+
+statistics.globalmap_champion
+Battle statistics on the Global Map in Champion division.
+
+An extra field.
+
+statistics.globalmap_champion.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.globalmap_champion.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.globalmap_champion.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.globalmap_champion.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.globalmap_champion.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.globalmap_champion.battles	numeric
+Battles fought
+
+statistics.globalmap_champion.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.globalmap_champion.capture_points	numeric
+Base capture points
+
+statistics.globalmap_champion.damage_dealt	numeric
+Damage caused
+
+statistics.globalmap_champion.damage_received	numeric
+Damage received
+
+statistics.globalmap_champion.direct_hits_received	numeric
+Direct hits received
+
+statistics.globalmap_champion.draws	numeric
+Draws
+
+statistics.globalmap_champion.dropped_capture_points	numeric
+Base defense points
+
+statistics.globalmap_champion.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.globalmap_champion.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.globalmap_champion.frags	numeric
+Vehicles destroyed
+
+statistics.globalmap_champion.hits	numeric
+Hits
+
+statistics.globalmap_champion.hits_percents	numeric
+Hit ratio
+
+statistics.globalmap_champion.losses	numeric
+Defeats
+
+statistics.globalmap_champion.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.globalmap_champion.piercings	numeric
+Penetrations
+
+statistics.globalmap_champion.piercings_received	numeric
+Penetrations received
+
+statistics.globalmap_champion.shots	numeric
+Shots fired
+
+statistics.globalmap_champion.spotted	numeric
+Enemies spotted
+
+statistics.globalmap_champion.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.globalmap_champion.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.globalmap_champion.survived_battles	numeric
+Battles survived
+
+statistics.globalmap_champion.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.globalmap_champion.wins	numeric
+Victories
+
+statistics.globalmap_champion.xp	numeric
+Total experience
+
+statistics.globalmap_middle
+Battle statistics on the Global Map in Medium division.
+
+An extra field.
+
+statistics.globalmap_middle.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.globalmap_middle.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.globalmap_middle.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.globalmap_middle.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.globalmap_middle.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.globalmap_middle.battles	numeric
+Battles fought
+
+statistics.globalmap_middle.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.globalmap_middle.capture_points	numeric
+Base capture points
+
+statistics.globalmap_middle.damage_dealt	numeric
+Damage caused
+
+statistics.globalmap_middle.damage_received	numeric
+Damage received
+
+statistics.globalmap_middle.direct_hits_received	numeric
+Direct hits received
+
+statistics.globalmap_middle.draws	numeric
+Draws
+
+statistics.globalmap_middle.dropped_capture_points	numeric
+Base defense points
+
+statistics.globalmap_middle.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.globalmap_middle.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.globalmap_middle.frags	numeric
+Vehicles destroyed
+
+statistics.globalmap_middle.hits	numeric
+Hits
+
+statistics.globalmap_middle.hits_percents	numeric
+Hit ratio
+
+statistics.globalmap_middle.losses	numeric
+Defeats
+
+statistics.globalmap_middle.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.globalmap_middle.piercings	numeric
+Penetrations
+
+statistics.globalmap_middle.piercings_received	numeric
+Penetrations received
+
+statistics.globalmap_middle.shots	numeric
+Shots fired
+
+statistics.globalmap_middle.spotted	numeric
+Enemies spotted
+
+statistics.globalmap_middle.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.globalmap_middle.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.globalmap_middle.survived_battles	numeric
+Battles survived
+
+statistics.globalmap_middle.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.globalmap_middle.wins	numeric
+Victories
+
+statistics.globalmap_middle.xp	numeric
+Total experience
+
+statistics.historical
+Historical battles statistics
+
+statistics.historical.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.historical.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.historical.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.historical.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.historical.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.historical.battles	numeric
+Battles fought
+
+statistics.historical.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.historical.capture_points	numeric
+Base capture points
+
+statistics.historical.damage_dealt	numeric
+Damage caused
+
+statistics.historical.damage_received	numeric
+Damage received
+
+statistics.historical.direct_hits_received	numeric
+Direct hits received
+
+statistics.historical.draws	numeric
+Draws
+
+statistics.historical.dropped_capture_points	numeric
+Base defense points
+
+statistics.historical.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.historical.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.historical.frags	numeric
+Vehicles destroyed
+
+statistics.historical.hits	numeric
+Hits
+
+statistics.historical.hits_percents	numeric
+Hit ratio
+
+statistics.historical.losses	numeric
+Defeats
+
+statistics.historical.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.historical.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.historical.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.historical.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.historical.max_xp	numeric
+Maximum experience per battle
+
+statistics.historical.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.historical.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.historical.piercings	numeric
+Penetrations
+
+statistics.historical.piercings_received	numeric
+Penetrations received
+
+statistics.historical.shots	numeric
+Shots fired
+
+statistics.historical.spotted	numeric
+Enemies spotted
+
+statistics.historical.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.historical.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.historical.survived_battles	numeric
+Battles survived
+
+statistics.historical.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.historical.wins	numeric
+Victories
+
+statistics.historical.xp	numeric
+Total experience
+
+statistics.random
+Random battles statistics.
+
+An extra field.
+
+statistics.random.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.random.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.random.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.random.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.random.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.random.battles	numeric
+Battles fought
+
+statistics.random.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.random.capture_points	numeric
+Base capture points
+
+statistics.random.damage_dealt	numeric
+Damage caused
+
+statistics.random.damage_received	numeric
+Damage received
+
+statistics.random.direct_hits_received	numeric
+Direct hits received
+
+statistics.random.draws	numeric
+Draws
+
+statistics.random.dropped_capture_points	numeric
+Base defense points
+
+statistics.random.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.random.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.random.frags	numeric
+Vehicles destroyed
+
+statistics.random.hits	numeric
+Hits
+
+statistics.random.hits_percents	numeric
+Hit ratio
+
+statistics.random.losses	numeric
+Defeats
+
+statistics.random.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.random.piercings	numeric
+Penetrations
+
+statistics.random.piercings_received	numeric
+Penetrations received
+
+statistics.random.shots	numeric
+Shots fired
+
+statistics.random.spotted	numeric
+Enemies spotted
+
+statistics.random.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.random.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.random.survived_battles	numeric
+Battles survived
+
+statistics.random.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.random.wins	numeric
+Victories
+
+statistics.random.xp	numeric
+Total experience
+
+statistics.ranked_10x10
+Archive of statistics for ranked 10x10 battles.
+
+An extra field.
+
+statistics.ranked_10x10.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_10x10.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_10x10.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_10x10.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_10x10.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_10x10.battles	numeric
+Battles fought
+
+statistics.ranked_10x10.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_10x10.capture_points	numeric
+Base capture points
+
+statistics.ranked_10x10.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_10x10.damage_received	numeric
+Damage received
+
+statistics.ranked_10x10.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_10x10.draws	numeric
+Draws
+
+statistics.ranked_10x10.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_10x10.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_10x10.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_10x10.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_10x10.hits	numeric
+Hits
+
+statistics.ranked_10x10.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_10x10.losses	numeric
+Defeats
+
+statistics.ranked_10x10.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_10x10.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_10x10.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_10x10.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_10x10.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_10x10.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_10x10.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_10x10.piercings	numeric
+Penetrations
+
+statistics.ranked_10x10.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_10x10.shots	numeric
+Shots fired
+
+statistics.ranked_10x10.spotted	numeric
+Enemies spotted
+
+statistics.ranked_10x10.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_10x10.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_10x10.survived_battles	numeric
+Battles survived
+
+statistics.ranked_10x10.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_10x10.wins	numeric
+Victories
+
+statistics.ranked_10x10.xp	numeric
+Total experience
+
+statistics.ranked_15x15
+Archive of statistics for ranked 15x15 battles.
+
+An extra field.
+
+statistics.ranked_15x15.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_15x15.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_15x15.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_15x15.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_15x15.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_15x15.battles	numeric
+Battles fought
+
+statistics.ranked_15x15.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_15x15.capture_points	numeric
+Base capture points
+
+statistics.ranked_15x15.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_15x15.damage_received	numeric
+Damage received
+
+statistics.ranked_15x15.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_15x15.draws	numeric
+Draws
+
+statistics.ranked_15x15.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_15x15.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_15x15.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_15x15.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_15x15.hits	numeric
+Hits
+
+statistics.ranked_15x15.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_15x15.losses	numeric
+Defeats
+
+statistics.ranked_15x15.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_15x15.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_15x15.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_15x15.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_15x15.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_15x15.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_15x15.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_15x15.piercings	numeric
+Penetrations
+
+statistics.ranked_15x15.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_15x15.shots	numeric
+Shots fired
+
+statistics.ranked_15x15.spotted	numeric
+Enemies spotted
+
+statistics.ranked_15x15.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_15x15.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_15x15.survived_battles	numeric
+Battles survived
+
+statistics.ranked_15x15.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_15x15.wins	numeric
+Victories
+
+statistics.ranked_15x15.xp	numeric
+Total experience
+
+statistics.ranked_battles
+Ranked Battles statistics.
+
+An extra field.
+
+Warning. The field will be disabled.
+statistics.ranked_battles.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_battles.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_battles.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_battles.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_battles.battles	numeric
+Battles fought
+
+statistics.ranked_battles.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_battles.capture_points	numeric
+Base capture points
+
+statistics.ranked_battles.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_battles.damage_received	numeric
+Damage received
+
+statistics.ranked_battles.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_battles.draws	numeric
+Draws
+
+statistics.ranked_battles.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_battles.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_battles.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_battles.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_battles.hits	numeric
+Hits
+
+statistics.ranked_battles.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_battles.losses	numeric
+Defeats
+
+statistics.ranked_battles.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_battles.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_battles.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_battles.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_battles.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_battles.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_battles.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_battles.piercings	numeric
+Penetrations
+
+statistics.ranked_battles.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_battles.shots	numeric
+Shots fired
+
+statistics.ranked_battles.spotted	numeric
+Enemies spotted
+
+statistics.ranked_battles.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_battles.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_battles.survived_battles	numeric
+Battles survived
+
+statistics.ranked_battles.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles.wins	numeric
+Victories
+
+statistics.ranked_battles.xp	numeric
+Total experience
+
+statistics.ranked_battles_current
+Current Ranked Battles statistics.
+
+An extra field.
+
+Warning. The field will be disabled.
+statistics.ranked_battles_current.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_battles_current.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_battles_current.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_battles_current.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles_current.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_battles_current.battles	numeric
+Battles fought
+
+statistics.ranked_battles_current.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_battles_current.capture_points	numeric
+Base capture points
+
+statistics.ranked_battles_current.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_battles_current.damage_received	numeric
+Damage received
+
+statistics.ranked_battles_current.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_battles_current.draws	numeric
+Draws
+
+statistics.ranked_battles_current.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_battles_current.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_battles_current.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_battles_current.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_battles_current.hits	numeric
+Hits
+
+statistics.ranked_battles_current.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_battles_current.losses	numeric
+Defeats
+
+statistics.ranked_battles_current.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_battles_current.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_battles_current.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_battles_current.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_battles_current.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_battles_current.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_battles_current.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_battles_current.piercings	numeric
+Penetrations
+
+statistics.ranked_battles_current.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_battles_current.shots	numeric
+Shots fired
+
+statistics.ranked_battles_current.spotted	numeric
+Enemies spotted
+
+statistics.ranked_battles_current.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_battles_current.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_battles_current.survived_battles	numeric
+Battles survived
+
+statistics.ranked_battles_current.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles_current.wins	numeric
+Victories
+
+statistics.ranked_battles_current.xp	numeric
+Total experience
+
+statistics.ranked_battles_previous
+Previous Ranked Battles statistics.
+
+An extra field.
+
+Warning. The field will be disabled.
+statistics.ranked_battles_previous.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_battles_previous.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_battles_previous.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_battles_previous.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles_previous.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_battles_previous.battles	numeric
+Battles fought
+
+statistics.ranked_battles_previous.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_battles_previous.capture_points	numeric
+Base capture points
+
+statistics.ranked_battles_previous.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_battles_previous.damage_received	numeric
+Damage received
+
+statistics.ranked_battles_previous.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_battles_previous.draws	numeric
+Draws
+
+statistics.ranked_battles_previous.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_battles_previous.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_battles_previous.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_battles_previous.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_battles_previous.hits	numeric
+Hits
+
+statistics.ranked_battles_previous.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_battles_previous.losses	numeric
+Defeats
+
+statistics.ranked_battles_previous.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_battles_previous.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_battles_previous.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_battles_previous.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_battles_previous.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_battles_previous.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_battles_previous.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_battles_previous.piercings	numeric
+Penetrations
+
+statistics.ranked_battles_previous.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_battles_previous.shots	numeric
+Shots fired
+
+statistics.ranked_battles_previous.spotted	numeric
+Enemies spotted
+
+statistics.ranked_battles_previous.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_battles_previous.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_battles_previous.survived_battles	numeric
+Battles survived
+
+statistics.ranked_battles_previous.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_battles_previous.wins	numeric
+Victories
+
+statistics.ranked_battles_previous.xp	numeric
+Total experience
+
+statistics.ranked_season_1
+Statistics of ranked battles for the first season of the year. Updated with every battle this season, data is reseted at the end of the year..
+
+An extra field.
+
+statistics.ranked_season_1.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_season_1.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_season_1.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_season_1.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_1.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_season_1.battles	numeric
+Battles fought
+
+statistics.ranked_season_1.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_season_1.capture_points	numeric
+Base capture points
+
+statistics.ranked_season_1.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_season_1.damage_received	numeric
+Damage received
+
+statistics.ranked_season_1.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_season_1.draws	numeric
+Draws
+
+statistics.ranked_season_1.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_season_1.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_season_1.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_season_1.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_season_1.hits	numeric
+Hits
+
+statistics.ranked_season_1.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_season_1.losses	numeric
+Defeats
+
+statistics.ranked_season_1.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_season_1.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_season_1.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_season_1.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_season_1.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_season_1.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_season_1.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_season_1.piercings	numeric
+Penetrations
+
+statistics.ranked_season_1.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_season_1.shots	numeric
+Shots fired
+
+statistics.ranked_season_1.spotted	numeric
+Enemies spotted
+
+statistics.ranked_season_1.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_season_1.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_season_1.survived_battles	numeric
+Battles survived
+
+statistics.ranked_season_1.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_1.wins	numeric
+Victories
+
+statistics.ranked_season_1.xp	numeric
+Total experience
+
+statistics.ranked_season_2
+Statistics of ranked battles for the second season of the year. Updated with every battle this season, data is reseted at the end of the year..
+
+An extra field.
+
+statistics.ranked_season_2.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_season_2.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_season_2.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_season_2.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_2.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_season_2.battles	numeric
+Battles fought
+
+statistics.ranked_season_2.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_season_2.capture_points	numeric
+Base capture points
+
+statistics.ranked_season_2.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_season_2.damage_received	numeric
+Damage received
+
+statistics.ranked_season_2.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_season_2.draws	numeric
+Draws
+
+statistics.ranked_season_2.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_season_2.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_season_2.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_season_2.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_season_2.hits	numeric
+Hits
+
+statistics.ranked_season_2.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_season_2.losses	numeric
+Defeats
+
+statistics.ranked_season_2.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_season_2.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_season_2.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_season_2.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_season_2.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_season_2.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_season_2.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_season_2.piercings	numeric
+Penetrations
+
+statistics.ranked_season_2.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_season_2.shots	numeric
+Shots fired
+
+statistics.ranked_season_2.spotted	numeric
+Enemies spotted
+
+statistics.ranked_season_2.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_season_2.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_season_2.survived_battles	numeric
+Battles survived
+
+statistics.ranked_season_2.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_2.wins	numeric
+Victories
+
+statistics.ranked_season_2.xp	numeric
+Total experience
+
+statistics.ranked_season_3
+Statistics of ranked battles for the third season of the year. Updated with every battle this season, data is reseted at the end of the year..
+
+An extra field.
+
+statistics.ranked_season_3.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.ranked_season_3.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.ranked_season_3.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.ranked_season_3.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_3.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.ranked_season_3.battles	numeric
+Battles fought
+
+statistics.ranked_season_3.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.ranked_season_3.capture_points	numeric
+Base capture points
+
+statistics.ranked_season_3.damage_dealt	numeric
+Damage caused
+
+statistics.ranked_season_3.damage_received	numeric
+Damage received
+
+statistics.ranked_season_3.direct_hits_received	numeric
+Direct hits received
+
+statistics.ranked_season_3.draws	numeric
+Draws
+
+statistics.ranked_season_3.dropped_capture_points	numeric
+Base defense points
+
+statistics.ranked_season_3.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.ranked_season_3.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.ranked_season_3.frags	numeric
+Vehicles destroyed
+
+statistics.ranked_season_3.hits	numeric
+Hits
+
+statistics.ranked_season_3.hits_percents	numeric
+Hit ratio
+
+statistics.ranked_season_3.losses	numeric
+Defeats
+
+statistics.ranked_season_3.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.ranked_season_3.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.ranked_season_3.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.ranked_season_3.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.ranked_season_3.max_xp	numeric
+Maximum experience per battle
+
+statistics.ranked_season_3.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.ranked_season_3.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.ranked_season_3.piercings	numeric
+Penetrations
+
+statistics.ranked_season_3.piercings_received	numeric
+Penetrations received
+
+statistics.ranked_season_3.shots	numeric
+Shots fired
+
+statistics.ranked_season_3.spotted	numeric
+Enemies spotted
+
+statistics.ranked_season_3.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.ranked_season_3.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.ranked_season_3.survived_battles	numeric
+Battles survived
+
+statistics.ranked_season_3.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.ranked_season_3.wins	numeric
+Victories
+
+statistics.ranked_season_3.xp	numeric
+Total experience
+
+statistics.regular_team
+Battle statistics of permanent teams
+
+Warning. The field will be disabled.
+statistics.regular_team.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.regular_team.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.regular_team.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.regular_team.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.regular_team.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.regular_team.battles	numeric
+Battles fought
+
+statistics.regular_team.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.regular_team.capture_points	numeric
+Base capture points
+
+statistics.regular_team.damage_dealt	numeric
+Damage caused
+
+statistics.regular_team.damage_received	numeric
+Damage received
+
+statistics.regular_team.direct_hits_received	numeric
+Direct hits received
+
+statistics.regular_team.draws	numeric
+Draws
+
+statistics.regular_team.dropped_capture_points	numeric
+Base defense points
+
+statistics.regular_team.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.regular_team.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.regular_team.frags	numeric
+Vehicles destroyed
+
+statistics.regular_team.hits	numeric
+Hits
+
+statistics.regular_team.hits_percents	numeric
+Hit ratio
+
+statistics.regular_team.losses	numeric
+Defeats
+
+statistics.regular_team.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.regular_team.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.regular_team.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.regular_team.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.regular_team.max_xp	numeric
+Maximum experience per battle
+
+statistics.regular_team.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.regular_team.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.regular_team.piercings	numeric
+Penetrations
+
+statistics.regular_team.piercings_received	numeric
+Penetrations received
+
+statistics.regular_team.shots	numeric
+Shots fired
+
+statistics.regular_team.spotted	numeric
+Enemies spotted
+
+statistics.regular_team.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.regular_team.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.regular_team.survived_battles	numeric
+Battles survived
+
+statistics.regular_team.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.regular_team.wins	numeric
+Victories
+
+statistics.regular_team.xp	numeric
+Total experience
+
+statistics.stronghold_defense
+General stats for player's battles in Stronghold defense
+
+statistics.stronghold_defense.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.stronghold_defense.battles	numeric
+Battles fought
+
+statistics.stronghold_defense.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.stronghold_defense.capture_points	numeric
+Base capture points
+
+statistics.stronghold_defense.damage_dealt	numeric
+Damage caused
+
+statistics.stronghold_defense.damage_received	numeric
+Damage received
+
+statistics.stronghold_defense.direct_hits_received	numeric
+Direct hits received
+
+statistics.stronghold_defense.draws	numeric
+Draws
+
+statistics.stronghold_defense.dropped_capture_points	numeric
+Base defense points
+
+statistics.stronghold_defense.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.stronghold_defense.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.stronghold_defense.frags	numeric
+Vehicles destroyed
+
+statistics.stronghold_defense.hits	numeric
+Hits
+
+statistics.stronghold_defense.hits_percents	numeric
+Hit ratio
+
+statistics.stronghold_defense.losses	numeric
+Defeats
+
+statistics.stronghold_defense.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.stronghold_defense.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.stronghold_defense.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.stronghold_defense.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.stronghold_defense.max_xp	numeric
+Maximum experience per battle
+
+statistics.stronghold_defense.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.stronghold_defense.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.stronghold_defense.piercings	numeric
+Penetrations
+
+statistics.stronghold_defense.piercings_received	numeric
+Penetrations received
+
+statistics.stronghold_defense.shots	numeric
+Shots fired
+
+statistics.stronghold_defense.spotted	numeric
+Enemies spotted
+
+statistics.stronghold_defense.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.stronghold_defense.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.stronghold_defense.survived_battles	numeric
+Battles survived
+
+statistics.stronghold_defense.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.stronghold_defense.wins	numeric
+Victories
+
+statistics.stronghold_defense.xp	numeric
+Total experience
+
+statistics.stronghold_skirmish
+General stats for player's battles in Skirmishes
+
+statistics.stronghold_skirmish.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.stronghold_skirmish.battles	numeric
+Battles fought
+
+statistics.stronghold_skirmish.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.stronghold_skirmish.capture_points	numeric
+Base capture points
+
+statistics.stronghold_skirmish.damage_dealt	numeric
+Damage caused
+
+statistics.stronghold_skirmish.damage_received	numeric
+Damage received
+
+statistics.stronghold_skirmish.direct_hits_received	numeric
+Direct hits received
+
+statistics.stronghold_skirmish.draws	numeric
+Draws
+
+statistics.stronghold_skirmish.dropped_capture_points	numeric
+Base defense points
+
+statistics.stronghold_skirmish.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.stronghold_skirmish.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.stronghold_skirmish.frags	numeric
+Vehicles destroyed
+
+statistics.stronghold_skirmish.hits	numeric
+Hits
+
+statistics.stronghold_skirmish.hits_percents	numeric
+Hit ratio
+
+statistics.stronghold_skirmish.losses	numeric
+Defeats
+
+statistics.stronghold_skirmish.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.stronghold_skirmish.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.stronghold_skirmish.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.stronghold_skirmish.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.stronghold_skirmish.max_xp	numeric
+Maximum experience per battle
+
+statistics.stronghold_skirmish.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.stronghold_skirmish.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.stronghold_skirmish.piercings	numeric
+Penetrations
+
+statistics.stronghold_skirmish.piercings_received	numeric
+Penetrations received
+
+statistics.stronghold_skirmish.shots	numeric
+Shots fired
+
+statistics.stronghold_skirmish.spotted	numeric
+Enemies spotted
+
+statistics.stronghold_skirmish.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.stronghold_skirmish.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.stronghold_skirmish.survived_battles	numeric
+Battles survived
+
+statistics.stronghold_skirmish.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.stronghold_skirmish.wins	numeric
+Victories
+
+statistics.stronghold_skirmish.xp	numeric
+Total experience
+
+statistics.team
+Team battles statistics
+
+statistics.team.avg_damage_assisted	float
+Average damage caused with your assistance
+
+statistics.team.avg_damage_assisted_radio	float
+Average damage upon your spotting
+
+statistics.team.avg_damage_assisted_track	float
+Average damage upon your shooting the track
+
+statistics.team.avg_damage_blocked	float
+Average damage blocked by armor per battle. Damage blocked by armor is damage received from shells (AP, HEAT and APCR) that hit a vehicle but caused no damage. Value is calculated starting from version 9.0.
+
+statistics.team.battle_avg_xp	numeric
+Average experience per battle
+
+statistics.team.battles	numeric
+Battles fought
+
+statistics.team.battles_on_stunning_vehicles	numeric
+Number of battles on vehicles that cause the stun effect
+
+statistics.team.capture_points	numeric
+Base capture points
+
+statistics.team.damage_dealt	numeric
+Damage caused
+
+statistics.team.damage_received	numeric
+Damage received
+
+statistics.team.direct_hits_received	numeric
+Direct hits received
+
+statistics.team.draws	numeric
+Draws
+
+statistics.team.dropped_capture_points	numeric
+Base defense points
+
+statistics.team.explosion_hits	numeric
+Hits on enemy as a result of splash damage
+
+statistics.team.explosion_hits_received	numeric
+Hits received as a result of splash damage
+
+statistics.team.frags	numeric
+Vehicles destroyed
+
+statistics.team.hits	numeric
+Hits
+
+statistics.team.hits_percents	numeric
+Hit ratio
+
+statistics.team.losses	numeric
+Defeats
+
+statistics.team.max_damage	numeric
+Maximum damage caused in a battle
+
+statistics.team.max_damage_tank_id	numeric
+Vehicle used to cause maximum damage
+
+statistics.team.max_frags	numeric
+Maximum destroyed in battle
+
+statistics.team.max_frags_tank_id	numeric
+Vehicle, in which maximum number of enemy vehicles was destroyed
+
+statistics.team.max_xp	numeric
+Maximum experience per battle
+
+statistics.team.max_xp_tank_id	numeric
+Vehicle used to gain maximum experience per battle
+
+statistics.team.no_damage_direct_hits_received	numeric
+Direct hits received that caused no damage
+
+statistics.team.piercings	numeric
+Penetrations
+
+statistics.team.piercings_received	numeric
+Penetrations received
+
+statistics.team.shots	numeric
+Shots fired
+
+statistics.team.spotted	numeric
+Enemies spotted
+
+statistics.team.stun_assisted_damage	numeric
+Damage to enemy vehicles stunned by you
+
+statistics.team.stun_number	numeric
+Number of times an enemy was stunned by you
+
+statistics.team.survived_battles	numeric
+Battles survived
+
+statistics.team.tanking_factor	float
+Ratio of damage blocked by armor from AP, HEAT, and APCR shells to damage received from these types of shells. Value is calculated starting from version 9.0.
+
+statistics.team.wins	numeric
+Victories
+
+statistics.team.xp	numeric
+Total experience

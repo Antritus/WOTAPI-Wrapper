@@ -1,0 +1,204 @@
+	/**
+	 * Class used for handling players personal data.
+	 * This class was mostly done by a script.
+	 * @since 1.0-snapshot
+	 * @author Antritus
+	 */
+	public class PlayerPrivateDataField {
+/**
+ * Account ban details
+ * @type string
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.ban_info")PRIVATE_BAN_INFO("private.ban_info"),
+
+public String getPRIVATE_BAN_INFO("private.ban_info")/**
+ * End time of account ban
+ * @type timestamp
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.ban_time")PRIVATE_BAN_TIME("private.ban_time"),
+
+public long getPRIVATE_BAN_TIME("private.ban_time")/**
+ * Overall battle life time in seconds
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.battle_life_time")PRIVATE_BATTLE_LIFE_TIME("private.battle_life_time"),
+
+public int getPRIVATE_BATTLE_LIFE_TIME("private.battle_life_time")/**
+ * Bonds
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.bonds")PRIVATE_BONDS("private.bonds"),
+
+public int getPRIVATE_BONDS("private.bonds")/**
+ * Credits
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.credits")PRIVATE_CREDITS("private.credits"),
+
+public int getPRIVATE_CREDITS("private.credits")/**
+ * Free Experience
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.free_xp")PRIVATE_FREE_XP("private.free_xp"),
+
+public int getPRIVATE_FREE_XP("private.free_xp")/**
+ * Vehicles in the Garage.
+ * @type list of integers
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.garage")PRIVATE_GARAGE("private.garage"),
+
+public List<Integer> getPRIVATE_GARAGE("private.garage")/**
+ * Gold
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.gold")PRIVATE_GOLD("private.gold"),
+
+public int getPRIVATE_GOLD("private.gold")/**
+ * Indicates if mobile phone number was added to the account
+ * @type boolean
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.is_bound_to_phone")PRIVATE_IS_BOUND_TO_PHONE("private.is_bound_to_phone"),
+
+public boolean isPRIVATE_IS_BOUND_TO_PHONE("private.is_bound_to_phone")/**
+ * Indicates if the account is Premium Account
+ * @type boolean
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.is_premium")PRIVATE_IS_PREMIUM("private.is_premium"),
+
+public boolean isPRIVATE_IS_PREMIUM("private.is_premium")/**
+ * Personal Missions Progress. The key is a task id, the value is a status.
+ * Possible statuses:
+ * NONE - a mission is unavailable
+ * UNLOCKED - a mission is available
+ * NEED_GET_MAIN_REWARD - the main reward has not been received
+ * MAIN_REWARD_GOTTEN - the main reward has been received
+ * NEED_GET_ADD_REWARD - additional reward has not been received
+ * NEED_GET_ALL_REWARDS - no rewards have been received
+ * ALL_REWARDS_GOTTEN - all rewards have been received .
+ * An extra field.
+ * @type associative array
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.personal_missions")PRIVATE_PERSONAL_MISSIONS("private.personal_missions"),
+
+public Own class type getPRIVATE_PERSONAL_MISSIONS("private.personal_missions")/**
+ * Premium Account expiration time
+ * @type timestamp
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.premium_expires_at")PRIVATE_PREMIUM_EXPIRES_AT("private.premium_expires_at"),
+
+public long getPRIVATE_PREMIUM_EXPIRES_AT("private.premium_expires_at")/**
+ * Amount of Personal Reserves
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.boosters.count")PRIVATE_BOOSTERS_COUNT("private.boosters.count"),
+
+public int getPRIVATE_BOOSTERS_COUNT("private.boosters.count")/**
+ * Expiration time
+ * @type timestamp
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.boosters.expiration_time")PRIVATE_BOOSTERS_EXPIRATION_TIME("private.boosters.expiration_time"),
+
+public long getPRIVATE_BOOSTERS_EXPIRATION_TIME("private.boosters.expiration_time")/**
+ * Status of Personal Reserves. Valid values:
+ * ACTIVE - Active
+ * INACTIVE - Inactive
+ * USED - Used
+ * @type string
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.boosters.state")PRIVATE_BOOSTERS_STATE("private.boosters.state"),
+
+public String getPRIVATE_BOOSTERS_STATE("private.boosters.state")/**
+ * The contact was added to the blacklist. Note that the blocked contact still belongs to contact groups or to the ungrouped list of contacts.
+ * @type list of integers
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.grouped_contacts.blocked")PRIVATE_GROUPED_CONTACTS_BLOCKED("private.grouped_contacts.blocked"),
+
+public List<Integer> getPRIVATE_GROUPED_CONTACTS_BLOCKED("private.grouped_contacts.blocked")/**
+ * Groups
+ * @type associative array
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.grouped_contacts.groups")PRIVATE_GROUPED_CONTACTS_GROUPS("private.grouped_contacts.groups"),
+
+public Own class type getPRIVATE_GROUPED_CONTACTS_GROUPS("private.grouped_contacts.groups")/**
+ * Ignored
+ * @type list of integers
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.grouped_contacts.ignored")PRIVATE_GROUPED_CONTACTS_IGNORED("private.grouped_contacts.ignored"),
+
+public List<Integer> getPRIVATE_GROUPED_CONTACTS_IGNORED("private.grouped_contacts.ignored")/**
+ * Muted
+ * @type list of integers
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.grouped_contacts.muted")PRIVATE_GROUPED_CONTACTS_MUTED("private.grouped_contacts.muted"),
+
+public List<Integer> getPRIVATE_GROUPED_CONTACTS_MUTED("private.grouped_contacts.muted")/**
+ * Not grouped
+ * @type list of integers
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.grouped_contacts.ungrouped")PRIVATE_GROUPED_CONTACTS_UNGROUPED("private.grouped_contacts.ungrouped"),
+
+public List<Integer> getPRIVATE_GROUPED_CONTACTS_UNGROUPED("private.grouped_contacts.ungrouped")/**
+ * Rental compensation in credits
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.rented.compensation_credits")PRIVATE_RENTED_COMPENSATION_CREDITS("private.rented.compensation_credits"),
+
+public int getPRIVATE_RENTED_COMPENSATION_CREDITS("private.rented.compensation_credits")/**
+ * Rental compensation in gold
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.rented.compensation_gold")PRIVATE_RENTED_COMPENSATION_GOLD("private.rented.compensation_gold"),
+
+public int getPRIVATE_RENTED_COMPENSATION_GOLD("private.rented.compensation_gold")/**
+ * Vehicle Rental expiration time
+ * @type timestamp
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.rented.expiration_time")PRIVATE_RENTED_EXPIRATION_TIME("private.rented.expiration_time"),
+
+public long getPRIVATE_RENTED_EXPIRATION_TIME("private.rented.expiration_time")/**
+ * Rented vehicle ID
+ * @type numeric
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.rented.tank_id")PRIVATE_RENTED_TANK_ID("private.rented.tank_id"),
+
+public int getPRIVATE_RENTED_TANK_ID("private.rented.tank_id")/**
+ * End time of chat ban
+ * @type timestamp
+ * @since 1.0-snapshot
+*/
+@SerializedName."private.restrictions.chat_ban_time")PRIVATE_RESTRICTIONS_CHAT_BAN_TIME("private.restrictions.chat_ban_time"),
+
+public long getPRIVATE_RESTRICTIONS_CHAT_BAN_TIME("private.restrictions.chat_ban_time");
+private final String packetForm;
+
+PlayerPrivateDataField(String packetForm){
+this.packetForm = packetForm;
+}
+public String getPacketForm(){
+return packetForm;
+}
+}
